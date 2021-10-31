@@ -2,10 +2,6 @@ body{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-img{
-    width: 1px;
-}
-
 ul{
     list-style-type: none;
     line-height: 25px;
@@ -14,24 +10,29 @@ ul{
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
-
-   
 }
 
 .first-block-text{
     display:  flex;
-    
-    
 }
+
 #first-block{
     background-color: rgb(93, 0, 180);
-    width: 300px;
+    width: 40%;
     color: cornsilk;
     height: 125px;
     display: flex;
     flex-direction: column;
     border-radius: 20px;
-    
+    -webkit-transition: all 0.6s ease;;
+    -moz-transition: all 0.6s ease;;
+    -o-transition: all 0.6s ease;;
+    transition: all 0.6s ease;
+}
+
+.icons{
+    width: 20px;
+    filter: invert(1);
 }
 
 h1{
@@ -41,7 +42,7 @@ h1{
 #content{
     max-width: 1330px;
     margin: 0px auto;
-    padding: px 15px;
+    padding: 0px 15px;
 }
 
 #second-block{
@@ -78,15 +79,125 @@ span{
 }
 
 .css-background{
-    background-image: url(https://antareskbr.ru/wp-content/uploads/2021/02/kosmos-art-zvezda-astronavt.jpg);
+    background: url(https://antareskbr.ru/wp-content/uploads/2021/02/kosmos-art-zvezda-astronavt.jpg) transparent no-repeat center center / cover ;
     width: 100%;
-    height: 500px;
+    height: 300px;
 }
 
-@media  (min-width: 1600px){
+#html-img{
+    max-width: 100%;
+}
+
+#html-picture{
+    text-align: center;
+}
+
+#block-object-fit{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.block-object-fit-inside img{
+    width: 100%;
+    height: 204px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+.block-object-fit-inside{ 
+   height: auto;
+   width: 30%;
+}
+
+html{
+    background-color: rgb(184, 184, 184);
+}
+#last-block{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.last-block-inside img{
+    width: 370px;
+    height: 150px;
+    object-fit: cover;
+    margin-right: 50px
+}
+
+.last-block-inside{
+    margin-bottom: 30px;
+    display: flex;
+}
+
+h3{
+    margin-top: 0px;
+}
+
+section{
+    margin-bottom: 40px;
+}
+
+#first-block:hover{
+    width: 100%;
+}
+
+li{
+    -webkit-transition: all 0.6s ease;;
+    -moz-transition: all 0.6s ease;;
+    -o-transition: all 0.6s ease;;
+    transition: all 0.6s ease;
+}
+li:hover{
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+}
+@media  (min-width: 1500px){
     .css-background{
         width: 100%;
-        height: 800px;
+        height: 700px;
     }
 }
     
+@media  (min-width: 1700px){
+    .css-background{
+        width: 100%;
+        height: 900px;
+    }
+}
+
+@media (max-width:1100px){
+    .last-block-inside img{
+        width: 300px;
+        height: 200px;
+    }
+}
+
+@media (max-width: 800px){
+    .last-block-inside img{
+        width: 250px;
+        height: 225px;
+}
+
+@media (max-width: 700px) {
+    .last-block-inside img{
+        width: 225px;
+        height: 250px;
+    }
+}
+
+@media (max-width: 600px) {
+    .last-block-inside img{
+        width: 190px;
+        height: 300px;
+    }
+}
+
+@media (max-width: 500px) {
+    .last-block-inside img{
+        width: 170px;
+        height: 325px;
+    }
+}

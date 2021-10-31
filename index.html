@@ -14,9 +14,9 @@
             <h2>Font Awesome + transition</h2>
             <div id="first-block">
                 <ul>
-                    <li><div class="first-block-text"><img src="">Marvel</div></li>
-                    <li><div class="first-block-text"><img src="">DC</div></li>
-                    <li><div class="first-block-text"><img src="">Starwars</div></li>
+                    <li><div class="first-block-text"><img class="icons" src="pictures/icon.svg">Marvel</div></li>
+                    <li><div class="first-block-text"><img class="icons" src="pictures/icon-eye.svg">DC</div></li>
+                    <li><div class="first-block-text"><img class="icons" src="pictures/icon-eye-crossed.svg">Starwars</div></li>
                 </ul>
             </div>
             <p>Наведись на синий блок и узри магию <span>transition.</span></p>
@@ -36,8 +36,60 @@
         <section>
             <h2>CSS Background</h2>
             <div class="css-background"></div>
+            <p>Выставляем картинку через <span>CSS</span> свойство <span>background</span>.</p>
         </section>
 
+        <section>
+            <h2>Images ( HTML Picture )</h2>
+            <div id="html-picture">
+                <picture>
+                    <source srcset="pictures/marvel.jpg" media="(min-width:1330px)" type="image/jpeg">
+                    <source srcset="pictures/dc.jpg" media="(min-width:992px)" type="image/jpeg">
+                    <source srcset="pictures/starwars.png" media="(max-width:992px)" type="image/jpeg">
+                    <img id="html-img" src="" alt="">
+                </picture>
+            </div>    
+        </section>
+
+        <section>
+            <h2>Universes (HTML object-fit )</h2>
+            <div id="block-object-fit">
+                <div class="block-object-fit-inside"><img src="pictures/marvel.jpg" alt="">Здесь кроется картинка с разрешением <span>1920*1035</span></div>
+                <div class="block-object-fit-inside"><img src="pictures/dc.jpg" alt="">Здесь кроется картинка с разрешением <span>700*350</span></div>
+                <div class="block-object-fit-inside"><img src="pictures/starwars.png" alt="">Здесь кроется картинка с разрешением <span>300*181</span></div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Universes in a row</h2>
+            <div id="last-block">
+                <div class="last-block-inside">
+                    <div class="last-block-inside-img"><img src="pictures/marvel.jpg" alt=""></div>
+                    <div">
+                        <h3>Marvel</h3>
+                        <div>Marvel was started in 1939 by Martin Goodman under a number of corporations and imprints but now known as Timely Comics, and by 1951 had generally become known as Atlas Comics. The Marvel era began in 1961, the year that the company launched The Fantastic Four and other superhero titles created by Stan Lee, Jack Kirby, Steve Ditko and many others. The Marvel brand, which had been used over the years, was solidified as the company's primary brand.</div>
+                    </div>
+                </div>
+
+
+                <div class="last-block-inside">
+                    <div class="last-block-inside-img"><img src="pictures/dc.jpg" alt=""></div>
+                    <div>
+                        <h3>DC</h3>
+                       <div>DC Comics is one of the largest and oldest American comic book companies, with their first comic under the DC banner being published in 1937.The majority of its publications take place within the fictional DC Universe and feature numerous culturally iconic heroic characters, such as Superman, Batman, and Wonder Woman.</div> 
+                    </div>
+                </div>
+
+
+                <div class="last-block-inside">
+                    <div class="last-block-inside-img"><img src="pictures/starwars.png" alt=""></div>
+                    <div>
+                        <h3>Star Wars</h3>
+                        <div>Star Wars was released on May 25, 1977, and first subtitled Episode IV: A New Hope in the 1979 book The Art of Star Wars.Episode V: The Empire Strikes Back was released on May 21, 1980, also achieving wide financial and critical success. The final film in the trilogy, Episode VI: Return of the Jedi was released on May 25, 1983.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
     </div>
 </body>
